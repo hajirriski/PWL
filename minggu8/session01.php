@@ -1,10 +1,13 @@
 <?php
 session_start();
+include 'konek.php';
+$data = mysqli_query($koneksi,"select * from minggu8");
+($d = mysqli_fetch_array($data));
 if (isset ($_POST['Login'])) {
     $user = $_POST['user'];
     $pass = $_POST['pass'];
     //periksa login
-    if ($user == "hajir" && $pass = "123") {
+    if ($user == $d['username'] && $pass = $d['password']) {
         //menciptakan session
         $_SESSION['login'] = $user;
         //menuju ke halaman pemeriksaan session
