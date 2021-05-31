@@ -7,7 +7,7 @@ include 'conf.php';
 
 <head>
     <title>PDO CRUDSRUD</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    <link rel="stylesheet" type="text/css" href="crud/assets/css/css.css">
 </head>
 
 <body>

@@ -1,17 +1,17 @@
 <?php
 include '../../conf.php';
 include '../../conn.php';
-$nama = post('nama');
-$alamat = post('alamat');
-$logo = "";
+$id = $_post('id');
+$nama = $_post('nama');
+$alamat = $_post('alamat');
+$update_logo = "";
 if ($_FILES['logo']['tmp_name'] != "") {
     $tmp_logo = $_FILES['logo']['tmp_name'];
     $logo = $_FILES['logo']['name'];
     move_uploaded_file($tmp_logo, "../../assets/foto/" . $logo);
+    $update_logo = ",`logo`='" . $logo . "'";
 }
-$simpan = $koneksi->prepare("INSERT INTO sekolah 
-(`nama`,`alamat`,`logo`) VALUES 
-('" . $nama . "','" . $alamat . "','" . $logo . "')");
+$simpan = $koneksi->prepare("UPDATE sekolah SET 'nama'=' . $nama . ','alamat'=' . $alamat . ' . $update_logo .  WHERE 'id' = . $id . '");
 $simpan->execute();
 header("location:../../index.php?p=sekolah");
 ?>
