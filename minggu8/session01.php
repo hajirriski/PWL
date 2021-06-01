@@ -1,14 +1,11 @@
 <?php
 session_start();
-include 'konek.php';
-$data = mysqli_query($koneksi,"SELECT * FROM tb_user");
 
-while ($d = mysqli_fetch_array($data));
 if (isset ($_POST['Login'])) {
     $user = $_POST['user'];
     $pass = $_POST['pass'];
     //periksa login
-    if ($user == $d['username'] && $pass = $d['password']) {
+    if ($user == "hajir" && $pass = "123") {
         //menciptakan session
         $_SESSION['login'] = $user;
         //menuju ke halaman pemeriksaan session
@@ -17,7 +14,7 @@ if (isset ($_POST['Login'])) {
     } else {
         echo "username atau password SALAH <br>";
         echo "Klik <a href='session01.php'> di sini </a> untuk coba lagi" ;
-    }
+        }
 } else {
     ?>
         <html>
@@ -35,4 +32,4 @@ if (isset ($_POST['Login'])) {
             </html>
             <?php
     } 
-    ?>
+?>
