@@ -5,19 +5,20 @@ session_start();
 <html>
 <head>
     <title>Halaman Login</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 <body>
-    <h2>Form Login</h2>
+    <h2 class="big-logo">Form Login</h2>
     <br>
     <form action="login.php?op=in" method="POST"class="margin-bottom-0">
-        <table border="0" cellpadding="4">
+        <table>
             <tr>
                 <td width="80">Username</td>
-                <td width="200"><input type="text" size="30" maxlength="32" name="username" required /></td>
+                <td><input type="text" name="username" required /></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input type="password" size="30" maxlength="255" name="password" required /></td>
+                <td><input type="password" name="password" required /></td>
             </tr>
             <tr>
                 <td></td>

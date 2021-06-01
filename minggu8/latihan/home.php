@@ -11,6 +11,7 @@ include "konek.php";
 <html>
 <head>
     <title>Tutorial Cara Menampilkan Data Berdasarkan User yang Sedang Login PHP</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 <body>
     <h2>Welcome ...!</h2>
