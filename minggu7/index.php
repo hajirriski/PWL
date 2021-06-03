@@ -7,7 +7,7 @@ include 'conf.php';
 
 <head>
     <title>PDO CRUDSRUD</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    <link rel="stylesheet" type="text/css" href="crud/assets/css/css.css">
 </head>
 
 <body>
@@ -27,16 +27,16 @@ include 'conf.php';
                     case 'sekolah':
                         switch (get('m')) {
                             case 'home':
-                                inc('tampilan/sekolah/all');
+                                inc('crud/tampilan/sekolah/all');
                                 break;
                             case 'add':
-                                inc('tampilan/sekolah/add');
+                                inc('crud/tampilan/sekolah/add');
                                 break;
                             case 'edit':
-                                inc('tampilan/sekolah/edit');
+                                inc('crud/tampilan/sekolah/edit');
                                 break;
                             default:
-                                inc('tampilan/sekolah/all');
+                                inc('crud/tampilan/sekolah/all');
                                 break;
                         }
                         break;

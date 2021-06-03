@@ -4,6 +4,7 @@
 <table>
 <tbody>
 <tr><td>Title</td><td>Author</td><td>Description</td></tr>
+<link rel="stylesheet" type="text/css" href="css/css.css">
 </tbody>
 <?php
 foreach ($books as $book) {

@@ -1,7 +1,7 @@
 <?php
 $addonq = '';
 if ($_GET("q") != "") {
-    $addonq = " WHERE nama LIKE '%" . $_GET('q') . "%'";
+    $addonq = "SELECT * FROM sekolah WHERE nama LIKE %" . $_GET('q') . "%";
 }
 $hasil = $koneksi->prepare("SELECT * FROM sekolah " . $addonq . " ORDER BY id DESC");
 $hasil->execute();
