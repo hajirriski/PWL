@@ -10,7 +10,7 @@ session_start();
 <body>
     <h2 class="big-logo">Form Login</h2>
     <br>
-    <form action="login.php?op=in" method="POST"class="margin-bottom-0">
+    <form action="login.php" method="POST"class="margin-bottom-0">
         <table>
             <tr>
                 <td width="80">Username</td>
@@ -36,5 +36,5 @@ session_start();
                 echo "Anda telah berhasil logout";
             }
     }
-    ?>
+?>
 </html>

@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><button type="submit">Simpan</button></td>
+            <td><button type="submit" name="submit">Simpan</button></td>
         </tr>
     </table>
 </form>
